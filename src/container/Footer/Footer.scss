@@ -1,0 +1,155 @@
+.app__footer {
+    flex: 1;
+    width: 100%;
+    //flex-direction: column;
+    background-color: var(--black-color);
+   
+    .head-text {
+        color: #fff;
+    }
+    
+    .line-container {
+        width: 80%;
+        background-color: var(--black-color);
+        margin-top: 3rem;
+
+        p {
+            margin-top: 1rem;
+        }
+
+        
+        
+
+      
+    }
+    .line {
+        display: block;
+        color: rgba(227, 227, 227, 0.5);
+        border-style: inset;
+        border-width: .1px;
+        border-color: rgba(2, 40, 78, 0.5);
+        
+        //margin-top: 2rem;
+
+      
+}
+
+}
+
+.app__footer-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+    .app__footer-card {
+        min-width: 290px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        
+        transition: all 0.3s ease-in-out;
+
+      
+
+        
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        &:hover {
+            box-shadow: 0 0 15px #fef4f5;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 100%;
+
+        }
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        
+    }
+}
+
+.app__footer-form {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 2rem;
+
+
+    div {
+        width: 80%;
+        margin: 0.75rem 0;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: rgb(36, 42, 42);
+
+
+        transition: all 0.3s ease-in-out;
+
+        input, textarea {
+            width: 100%;
+            padding:0.95rem;
+            border: none;
+            font-family: var(--font-base);
+            outline: none;
+        }
+
+        textarea {
+            height: 170px;
+
+
+        }
+
+        &:hover {
+            box-shadow: 0 0 15px #fef4f5;
+        }
+    }
+
+    button {
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border:none;
+        background-color: rgb(255, 255, 255);
+       
+        
+
+        font-weight: 500;
+        color: var(--black-color);
+        outline: none;
+        margin: 2rem 2rem 0 0;
+        font-family: var(--font-base);
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--secondary-color);
+            color: var(--white-color);
+            box-shadow: 0px 5px 10px 0px rgba(0, 70, 140, 0.5);  
+
+
+        }
+
+
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        //margin: 1rem 0;
+        
+    }
+
+}
+
