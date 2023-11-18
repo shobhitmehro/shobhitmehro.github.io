@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e185588a.css",
-    "main.js": "/static/js/main.53d533b9.js",
-    "static/js/726.b792280e.chunk.js": "/static/js/726.b792280e.chunk.js",
-    "static/media/profile.png": "/static/media/profile.a7eb33670427af766079.png",
-    "static/media/sass.png": "/static/media/sass.36e863bfbcb25c109d00.png",
-    "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
-    "index.html": "/index.html",
-    "static/media/circle.svg": "/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.e185588a.css.map": "/static/css/main.e185588a.css.map",
-    "main.53d533b9.js.map": "/static/js/main.53d533b9.js.map",
-    "726.b792280e.chunk.js.map": "/static/js/726.b792280e.chunk.js.map"
+    "main.css": "/shobhitm.tech/static/css/main.e185588a.css",
+    "main.js": "/shobhitm.tech/static/js/main.044691e6.js",
+    "static/js/726.b792280e.chunk.js": "/shobhitm.tech/static/js/726.b792280e.chunk.js",
+    "static/media/profile.png": "/shobhitm.tech/static/media/profile.a7eb33670427af766079.png",
+    "static/media/sass.png": "/shobhitm.tech/static/media/sass.36e863bfbcb25c109d00.png",
+    "static/media/css.png": "/shobhitm.tech/static/media/css.5721a3928fe43de6baf8.png",
+    "index.html": "/shobhitm.tech/index.html",
+    "static/media/circle.svg": "/shobhitm.tech/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
+    "main.e185588a.css.map": "/shobhitm.tech/static/css/main.e185588a.css.map",
+    "main.044691e6.js.map": "/shobhitm.tech/static/js/main.044691e6.js.map",
+    "726.b792280e.chunk.js.map": "/shobhitm.tech/static/js/726.b792280e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e185588a.css",
-    "static/js/main.53d533b9.js"
+    "static/js/main.044691e6.js"
   ]
 }
