@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Navbar.scss'
 import { images } from '../../constants';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
@@ -8,24 +8,64 @@ import { BsLinkedin, BsGithub } from "react-icons/bs"
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false) 
+  const [visible, setVisible] = useState(true)
+  const [isClicked, setIsClicked] = useState(false)
+  const navClass = isClicked ? 'app__navbar-Click' : "app__navbar"
 
+
+  
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+
+      if (width > 900) {
+        setIsClicked(false)
+
+        
+        
+      }
+      if (width < 900 && toggle) {
+          
+        setToggle(false)
+      }
+      
+    };
+
+    // Initial call to set the screen size on component mount
+    handleResize();
+
+    // Event listener to update screen size on window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); 
+
+  
   return (
 
     
 
   <div className='back'>
-    <nav className="app__navbar">
+
+
+    <>
+    {true && (
+    <nav className={navClass}>
+        <>
         <div className='app__navbar-social'>
-        <a href='https://www.linkedin.com/in/shobhit-m/' target='_blank' rel='noreferrer' alt='linkedlin'>
-          <div>          
-            <BsLinkedin className='one'/>
-          </div>
-          </a>
-          <a href='https://github.com/shobhitmehro' target='_blank' rel='noreferrer'>
-          <div>
-            <BsGithub className='two' />
-          </div>
-          </a>
+          <a href='https://www.linkedin.com/in/shobhit-m/' target='_blank' rel='noreferrer' alt='linkedlin'>
+            <div>          
+              <BsLinkedin className='one'/>
+            </div>
+            </a>
+            <a href='https://github.com/shobhitmehro' target='_blank' rel='noreferrer'>
+            <div>
+              <BsGithub className='two' />
+            </div>
+            </a>
         </div>
         
         <ul className="app__navbar-links">
@@ -36,29 +76,53 @@ const Navbar = () => {
               </li>
            ))}
         </ul>
+        </>
 
-        <div className="app__navbar-menu">
-          <HiMenuAlt4 onClick={() => setToggle(true)}/> 
+        <div className='app__navbar-menu'>
 
-          {toggle && (
-            <motion.div
-            whileInView={{ y: [-200,0]}}
-            transition={{ duration: 1.2, ease:'easeInOut'}}
-            >
-              <HiX onClick={() => setToggle(false)}/>
+          {toggle ? 
+                <HiX className='svg1' onClick={() => [setToggle(false), setVisible(true),setIsClicked(false)]}/>
+
+          :
+                <HiMenuAlt4 className='svg2' onClick={() => [setToggle(true),setVisible(false),setIsClicked(true)]}/> 
+
+          }
+
+              {toggle && ( 
+            <div className='menu'>
+            
               <ul>
                 {[ 'home', 'skills', 'projects', 'hobbies', 'contact'].map((item) => (
                 <li key = {item}>
                   
-                  <a href={`#${item}`} onClick={() => setToggle(false)} >{item}</a>
+                  <a href={`#${item}`} onClick={() => [setToggle(false),setIsClicked(false)]} >{item}</a>
                 </li>
               ))}
               </ul>
-            </motion.div>
+            </div>
           )}
+          </div>
+      
+    </nav>
+      )}
+      </>
 
-        </div>
-    </nav> 
+      
+      
+        
+
+        
+        
+        
+        
+     
+          
+          
+
+
+
+        
+    
   </div>
   )
 }
