@@ -76,7 +76,7 @@ const Footer = () => {
           
         <button type='button' className='p-text' onClick={handleSubmit}>{loading ? 'Sending your message to Shobhit...' : 'Send'}</button>
         <div className='line-container'><hr className='line'/>
-            <p className='p-text'> © 2023 Shobhit Mehrotra </p>
+            <p className='p-text'> © 2024 Shobhit Mehrotra </p>
         
         </div>
 

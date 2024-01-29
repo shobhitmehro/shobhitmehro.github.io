@@ -33,7 +33,7 @@ const Header = () => {
 
         <div className='app__header-description-box'>
           <p className='p-text'>Welcome to my web corner! I am a student studying <b>Computer Science</b> at the University of Massachusetts Amherst with an expected graduation date in 2026. I'm 
-          interested in pursuing a career in Aritifical Intelligence and Machine Learning, but I also love working on building functional and beautiful fullstack applications. Feel free to contact me so we can chat! I'm open to work internships during Winter 2023/Summer 2024.
+          interested in pursuing a career in Aritifical Intelligence and Machine Learning, but I also love working on building functional and beautiful fullstack applications. Feel free to contact me so we can chat! I'm open to work internships during Summer 2024.
           </p>
 
         </div>
