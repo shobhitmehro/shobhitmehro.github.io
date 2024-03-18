@@ -10,7 +10,6 @@ import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
 
-
 export default {
   email,
   css,
@@ -22,5 +21,6 @@ export default {
   profile,
   circle,
   logo,
+
   
 };
