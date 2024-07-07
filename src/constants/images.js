@@ -8,7 +8,7 @@ import sass from '../assets/sass.png';
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
-
+import umass from '../assets/umass.svg';
 
 export default {
   email,
@@ -21,6 +21,8 @@ export default {
   profile,
   circle,
   logo,
+  umass,
+  
 
   
 };
