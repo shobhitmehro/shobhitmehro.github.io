@@ -6,7 +6,7 @@ import App from './App';
 import './index.css';
 
 ReactDOM.render(
-    <div style={{ backgroundColor: '#FFFFFF', height: '100vh' }}>
+    <div style={{ backgroundColor:"#000a18" , height: '100vh' }}>
 <App/>
 </div>
 , document.getElementById('root'))

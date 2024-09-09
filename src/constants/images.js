@@ -7,9 +7,9 @@ import react from '../assets/react.png';
 import sass from '../assets/sass.png';
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.svg';
 import umass from '../assets/umass.svg';
-
+import nav_logo from '../assets/nav_logo.svg';
 export default {
   email,
   css,
@@ -22,6 +22,8 @@ export default {
   circle,
   logo,
   umass,
+  nav_logo
+  
   
 
   

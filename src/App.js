@@ -12,13 +12,7 @@ const App = () => {
     <div className='app' >
 
       <Navbar />
-        <Header />
-        <Skills />
-        <Experience/>
-
-        <Works />
-        <Hobbies />
-  <Footer /> 
+        
 
 
     </div>
