@@ -6,11 +6,11 @@ import BlogPage from './pages/BlogPage';
 
 function App() {
   return (
-    <Router basename="/">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/#projects" element={<ProjectsPage />} />
+        <Route path="/#blog" element={<BlogPage />} />
       </Routes>
     </Router>
   );

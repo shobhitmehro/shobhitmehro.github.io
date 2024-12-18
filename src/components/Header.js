@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaLinkedin, FaGithub } from 'react-icons/fa'; 
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Header() {
   return (
@@ -25,22 +25,22 @@ function Header() {
       </div>
       <nav>
         <a
-          href="/"
+          href="#/"
           className="text-sm text-gray-500 hover:text-gray-700 mx-2"
         >
-          home
+          Home
         </a>
         <a
-          href="/#/blog"
+          href="#/blog"
           className="text-sm text-gray-500 hover:text-gray-700 mx-2"
         >
-          blog
+          Blog
         </a>
         <a
-          href="/#/projects"
+          href="#/projects"
           className="text-sm text-gray-500 hover:text-gray-700 mx-2"
         >
-          projects
+          Projects
         </a>
       </nav>
     </header>
