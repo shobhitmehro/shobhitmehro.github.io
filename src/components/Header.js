@@ -31,13 +31,13 @@ function Header() {
           home
         </a>
         <a
-          href="blog"
+          href="/#/blog"
           className="text-sm text-gray-500 hover:text-gray-700 mx-2"
         >
           blog
         </a>
         <a
-          href="projects"
+          href="/#/projects"
           className="text-sm text-gray-500 hover:text-gray-700 mx-2"
         >
           projects

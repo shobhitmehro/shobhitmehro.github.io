@@ -1,14 +1,12 @@
 import React from 'react';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ProjectsPage from './pages/ProjectsPage'; 
+import ProjectsPage from './pages/ProjectsPage';
 import BlogPage from './pages/BlogPage';
-
-
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
@@ -19,4 +17,3 @@ function App() {
 }
 
 export default App;
-
