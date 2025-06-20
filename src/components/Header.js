@@ -1,47 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function Header() {
   return (
-    <header className="pt-4 flex justify-between items-center text-gray-800">
-      <div className="flex space-x-6">
-        <a
-          href="https://www.linkedin.com/in/shobhit-m"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center space-x-2 hover:text-blue-400 transition duration-200"
-        >
-          <FaLinkedin className="w-5 h-5" />
-        </a>
-        <a
-          href="https://github.com/shobhitmehro"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center space-x-2 hover:text-green-400 transition duration-200"
-        >
-          <FaGithub className="w-5 h-5" />
-        </a>
-      </div>
+    <header className="pt-4 flex flex-end text-gray-800">
       <nav>
-        <a
-          href="#/"
-          className="text-sm text-gray-500 hover:text-gray-700 mx-2"
-        >
+        <Link to="/" className="text-sm text-gray-500 hover:text-gray-700 ">
           Home
-        </a>
-        <a
-          href="#/blog"
+        </Link>
+        <Link
+          to="/about"
           className="text-sm text-gray-500 hover:text-gray-700 mx-2"
         >
-          Blog
-        </a>
-        <a
-          href="#/projects"
-          className="text-sm text-gray-500 hover:text-gray-700 mx-2"
+          About
+        </Link>
+        <Link
+          to="/projects"
+          className="text-sm text-gray-500 hover:text-gray-700 "
         >
           Projects
-        </a>
+        </Link>
       </nav>
     </header>
   );
