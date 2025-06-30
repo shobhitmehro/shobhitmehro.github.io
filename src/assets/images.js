@@ -13,6 +13,9 @@ import gitLogo from "./languages/git-logo.svg";
 import gcpLogo from "./languages/gcp-logo.svg";
 import awsLogo from "./languages/aws-logo.svg";
 import tfLogo from "./languages/tf-logo.svg";
+import glLogo from "./languages/gl-logo.svg";
+import kafLogo from "./languages/kafka-logo.svg";
+import fidLogo from "./logo/fidelity-logo.svg";
 
 export {
   jsLogo,
@@ -30,4 +33,7 @@ export {
   gcpLogo,
   awsLogo,
   tfLogo,
+  fidLogo,
+  glLogo,
+  kafLogo
 };

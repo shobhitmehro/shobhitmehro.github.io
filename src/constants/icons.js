@@ -14,6 +14,8 @@ import {
   gcpLogo,
   awsLogo,
   tfLogo,
+  glLogo,
+  kafLogo,
 } from "../assets/images";
 export const techIcons = [
   { name: "JavaScript", src: jsLogo },
@@ -30,4 +32,5 @@ export const techIcons = [
   { name: "Google Cloud", src: gcpLogo },
   { name: "AWS", src: awsLogo },
   { name: "TensorFlow", src: tfLogo },
+  { name: "OpenGL", src: glLogo },
 ];

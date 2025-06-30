@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import PostCard from "../components/PostCard";
 import Experience from "../components/Experience";
@@ -8,10 +8,12 @@ import resume from "../data/resume.pdf";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { techIcons } from "../constants/icons";
 import TechIcon from "../components/TechIcon";
+import { fidLogo } from "../assets/images";
 
 function HomePage() {
+  const [highlightedTech, setHighlightedTech] = useState([]);
   return (
-    <div className="bg-stone-50 min-h-screen flex justify-center px-6 md:px-20">
+    <div className="min-h-screen w-full bg-stone-50 flex justify-center px-6 md:px-20">
       <div className="max-w-3xl w-full">
         <Header />
         <section className="mt-5">
@@ -19,18 +21,9 @@ function HomePage() {
             Shobhit Mehrotra
           </h1>
           <div className="flex space-x-4 pt-4">
-            {/* <a2
-                            href={resume}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center space-x-2 bg-transparent text-black px-4 py-2 rounded-md transition duration-200 border border-gray-300"
-                        >
-                            <FaFileAlt className="w-5 h-5" />
-                            <span>Resume</span>
-                        </a> */}
             <a
               href="mailto:shobhitmehro@umass.edu"
-              className="flex items-center space-x-2 hover:text-white transition duration-200"
+              className="flex items-center space-x-2 hover:text-zinc-300 transition duration-200"
             >
               <FaEnvelope className="w-5 h-5" />
             </a>
@@ -52,7 +45,7 @@ function HomePage() {
             </a>
           </div>
           <div className="flex space-x-6"></div>
-          <p className="mt-4 text-gray-600">I study computer science at UMass Amherst. </p>
+          <p className="mt-4 text-gray-600">I study computer science at UMass Amherst. I'm interested in full stack development, systems infrastructure, and graphics programming.</p>
         </section>
 
         <section className="mt-5">
@@ -65,7 +58,12 @@ function HomePage() {
           <div className="border border-gray-300 dark:border-gray-700 rounded-md p-4 transition-shadow mt-4">
             <div className="flex flex-wrap justify-center gap-x-4 gap-y-3">
               {techIcons.map((item) => (
-                <TechIcon key={item.name} name={item.name} src={item.src} />
+                <TechIcon
+                  key={item.name}
+                  name={item.name}
+                  src={item.src}
+                  highlighted={highlightedTech && highlightedTech.includes(item.name)}
+                />
               ))}
             </div>
           </div>
@@ -79,25 +77,14 @@ function HomePage() {
           </div>
           <div className="mt-4">
             <Experience
-              title="Krastanov Lab"
-              role="Research and Software Development Engineer"
-              duration="October 2024 - Current"
-              description="quantum pathfinding in julia"
+              title="Fidelity Investments"
+              role="Software Engineer Intern"
+              duration="June 2025 - Present"
+              description="fidelity fund technology"
+              techStack={['Angular', 'Spring', 'TypeScript', 'JavaScript', 'Java', 'AWS', 'Git', 'Node']}
+              setHighlightedTech={setHighlightedTech}
             />
-            <div className="pt-4"></div>
-            <Experience
-              title="National Center for Technology and Dispute Resolution"
-              role="Software Engineer"
-              duration="February 2024 - Current"
-              description="mobile disaster relief app"
-            />
-            <div className="pt-4"></div>
-            <Experience
-              title="UMass Theory Group"
-              role="Software Engineer"
-              duration="June 2024 - August 2024"
-              description="complexity theory on linear separability"
-            />
+            
           </div>
         </section>
         <Footer/>
